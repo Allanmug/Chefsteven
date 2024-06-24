@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Chef Steven Food Delivery</title>
+    <link rel="stylesheet" href="styles.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Include Toastify CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <style>
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main h2 {
+            text-align: center;
+            color: #ff6f61;
+            font-family: 'Lobster', cursive;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Chef Steven Food Delivery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="order" class="section-padding">
+            <h2>Order Confirmation</h2>
+            <form id="order-form" onsubmit="handleOrderFormSubmit(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <h2>Order Summary</h2>
+                <div id="order-summary"></div>
+                <button class="custom-button" type="submit">Confirm Order</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&phone; +256781619459 / 0754832171</p>
+        <p>Banda Kyambogo</p>
+        <p>&copy; 2024 Chef Steven Quality Foodz and Classic Snacks Ug</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="scripts.min.js"></script>
+</body>
+
+</html>
